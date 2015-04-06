@@ -1,0 +1,49 @@
+﻿@model Bade.Lib.Model.MemberRequest
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div ng-app="memberApp">
+    <div ng-controller="RegisterCtrl as register">
+        <form name="myForm">
+            <div class="form-group">
+                <label class="control-label">
+                    Kullanıcı
+                </label>
+                <input type="text" class="form-control" data-ng-model="newMember.UserName" required data-ng-pattern="/^[a-zA-Z0-9]{4,10}$/" />
+            </div>
+
+            <div class="form-group" data-ng-class="{'has-success has-feedback': myForm.Email.$error.IsEmailAvaliable, 'has-dabger has-feedback':!myForm.Email.$error.IsEmailAvaliable, 'has-dabger has-feedback':!myForm.Email.$error.required}">
+                <label class=" control-label">
+                    Email
+                </label>
+                <input id="Email" name="Email" type="email" class="form-control" ng-model="newMember.Email"
+                       ng-unique required />
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+                <span ng-show="myForm.Email.$error.IsEmailAvaliable">
+                    bu kullanıcı adı var
+                </span>
+                <span ng-show="myForm.Email.$invalid">
+                    geçersiz email
+                </span>
+            </div>
+
+            <input type="text" data-ng-model="newMember.Password" required />
+            <input type="text" data-ng-model="newMember.PasswordConfirm" required />
+
+            <input type="submit" value="Add" ng-click="register()" data-ng-disabled="!myForm.$valid" class="btn btn-primary" />
+            <br />
+            <span class="error" ng-show="myForm.input.$error.required">
+                Required!
+            </span>
+            <span class="error" ng-show="myForm.input.$error.email">
+                Not valid email!
+            </span>
+        </form>
+
+
+
+    </div>
+</div>

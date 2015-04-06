@@ -1,0 +1,97 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    var RequestType = {
+        POST: 'POST',
+        GET: 'GET',
+        PUT: 'PUT',
+        DELETE: 'DELETE'
+    };
+
+    AjaxController = {
+        url: '',
+        requestType: RequestType.GET,
+        paramArray: [],
+
+        init: function () {
+            alert("test");
+            var paramList = '';
+            switch (this.requestType) {
+                case RequestType.POST:
+                    {
+                        if (this.paramArray.length > 0) {
+                            for (var i = 0; i < this.paramArray.length; i++) {
+                                if (paramList.length > 0) paramList += ",";
+                                paramList += this.paramArray[i].name + ':"' + this.paramArray[i].value + '"';
+                            }
+                            paramList = '{' + paramList + '}';
+                        }
+                        break;
+                    }
+                case RequestType.GET:
+                    {
+                        if (this.paramArray.length > 0) {
+                            for (var j = 0; j < this.paramArray.length; j += 2) {
+                                if (paramList.length > 0) paramList += "&";
+                                paramList += this.paramArray[j] + '=' + this.paramArray[j + 1];
+                            }
+                        }
+                        break;
+                    }
+            }
+            this.process(requestType, paramList);
+        },
+
+        process: function (requestType, paramList) {
+
+            $.ajax({
+                type: requestType,
+                contentType: 'application/json; charset=utf-8',
+                url: this.url,
+                data: paramList,
+                dataType: 'json',
+                crossDomain: true,
+                success: function (data) {
+                    AjaxController.onSuccess(data);
+                },
+                complete: function (data) {
+                    AjaxController.onComplete(data);
+                },
+                error: function (xhr, status, error) {
+                    AjaxController.onError(xhr, status, error);
+                }
+            });
+        },
+        onSuccess: function (data) {
+
+            return (data);
+        },
+        onComplete: function (data) {
+            return (data);
+        },
+        onError: function (xhr, status, error) {
+            return (error);
+        }
+    };
+</script>
+
+<script>
+    function send() {
+
+        AjaxController
+            AjaxController.init();
+        //AjaxController = {
+        //    onSuccess: function (data) {
+        //        alert(data);
+        //    },
+        //    paramArray: ['id', 3],
+        //    requestType: RequestType.GET,
+        //    url: '/api/ApplicationConfig/ApplicationConfigListById',
+        //}
+        //var animal1 = Object.create(AjaxController);
+        //animal1.init();
+
+    }
+</script>
+
+<a href="#" onclick="send()">button</a>

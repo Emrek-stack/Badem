@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC10E1D8-469D-4979-935E-70A8E8169468}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bade.Entity</RootNamespace>
+    <AssemblyName>Bade.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Admin.cs" />
+    <Compile Include="Domain\AdminPermission.cs" />
+    <Compile Include="Domain\AdminRole.cs" />
+    <Compile Include="Domain\Application.cs" />
+    <Compile Include="Domain\ApplicationConfig.cs" />
+    <Compile Include="Domain\Content.cs" />
+    <Compile Include="Domain\Label.cs" />
+    <Compile Include="Domain\LabelDetail.cs" />
+    <Compile Include="Domain\Media.cs" />
+    <Compile Include="Domain\Member.cs" />
+    <Compile Include="Domain\MemberDetail.cs" />
+    <Compile Include="Domain\MemberSocialMedia.cs" />
+    <Compile Include="Domain\Permission.cs" />
+    <Compile Include="Domain\Role.cs" />
+    <Compile Include="Domain\RolePermission.cs" />
+    <Compile Include="Domain\Route.cs" />
+    <Compile Include="Domain\RouteConstraint.cs" />
+    <Compile Include="Domain\RouteDataToken.cs" />
+    <Compile Include="Domain\RouteDefault.cs" />
+    <Compile Include="Domain\RouteType.cs" />
+    <Compile Include="Domain\SocialMedia.cs" />
+    <Compile Include="Domain\Status.cs" />
+    <Compile Include="Domain\StatusGroup.cs" />
+    <Compile Include="Domain\StatusGroupItem.cs" />
+    <Compile Include="Domain\Type.cs" />
+    <Compile Include="Domain\TypeGroup.cs" />
+    <Compile Include="Domain\TypeGroupItem.cs" />
+    <Compile Include="Domain\Wall.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bade.Common\Bade.Lib.csproj">
+      <Project>{BC3A4DC5-5C29-45CC-939C-C34ECB30A61C}</Project>
+      <Name>Bade.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bade.Constants\Bade.Constants.csproj">
+      <Project>{BC6E8962-51BD-4B8D-82E9-FA724A3C12B2}</Project>
+      <Name>Bade.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bade.Infrastructure\Bade.Infrastructure.csproj">
+      <Project>{DDD330DD-DA12-4AD2-B24A-7090802C19FE}</Project>
+      <Name>Bade.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CSharpKeywords" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;CSKeywords&gt;
+&lt;Keyword&gt;abstract&lt;/Keyword&gt;
+&lt;Keyword&gt;as&lt;/Keyword&gt;
+&lt;Keyword&gt;base&lt;/Keyword&gt;
+&lt;Keyword&gt;bool&lt;/Keyword&gt;
+&lt;Keyword&gt;break&lt;/Keyword&gt;
+&lt;Keyword&gt;byte&lt;/Keyword&gt;
+&lt;Keyword&gt;case&lt;/Keyword&gt;
+&lt;Keyword&gt;catch&lt;/Keyword&gt;
+&lt;Keyword&gt;char&lt;/Keyword&gt;
+&lt;Keyword&gt;checked&lt;/Keyword&gt;
+&lt;Keyword&gt;class&lt;/Keyword&gt;
+&lt;Keyword&gt;const&lt;/Keyword&gt;
+&lt;Keyword&gt;continue&lt;/Keyword&gt;
+&lt;Keyword&gt;decimal&lt;/Keyword&gt;
+&lt;Keyword&gt;default&lt;/Keyword&gt;
+&lt;Keyword&gt;delegate&lt;/Keyword&gt;
+&lt;Keyword&gt;do&lt;/Keyword&gt;
+&lt;Keyword&gt;double&lt;/Keyword&gt;
+&lt;Keyword&gt;else&lt;/Keyword&gt;
+&lt;Keyword&gt;enum&lt;/Keyword&gt;
+&lt;Keyword&gt;event&lt;/Keyword&gt;
+&lt;Keyword&gt;explicit&lt;/Keyword&gt;
+&lt;Keyword&gt;extern&lt;/Keyword&gt;
+&lt;Keyword&gt;false&lt;/Keyword&gt;
+&lt;Keyword&gt;finally&lt;/Keyword&gt;
+&lt;Keyword&gt;fixed&lt;/Keyword&gt;
+&lt;Keyword&gt;float&lt;/Keyword&gt;
+&lt;Keyword&gt;for&lt;/Keyword&gt;
+&lt;Keyword&gt;foreach&lt;/Keyword&gt;
+&lt;Keyword&gt;goto&lt;/Keyword&gt;
+&lt;Keyword&gt;if&lt;/Keyword&gt;
+&lt;Keyword&gt;implicit&lt;/Keyword&gt;
+&lt;Keyword&gt;in&lt;/Keyword&gt;
+&lt;Keyword&gt;int&lt;/Keyword&gt;
+&lt;Keyword&gt;interface&lt;/Keyword&gt;
+&lt;Keyword&gt;internal&lt;/Keyword&gt;
+&lt;Keyword&gt;is&lt;/Keyword&gt;
+&lt;Keyword&gt;lock&lt;/Keyword&gt;
+&lt;Keyword&gt;long&lt;/Keyword&gt;
+&lt;Keyword&gt;namespace&lt;/Keyword&gt;
+&lt;Keyword&gt;new&lt;/Keyword&gt;
+&lt;Keyword&gt;null&lt;/Keyword&gt;
+&lt;Keyword&gt;object&lt;/Keyword&gt;
+&lt;Keyword&gt;operator&lt;/Keyword&gt;
+&lt;Keyword&gt;out&lt;/Keyword&gt;
+&lt;Keyword&gt;override&lt;/Keyword&gt;
+&lt;Keyword&gt;params&lt;/Keyword&gt;
+&lt;Keyword&gt;private&lt;/Keyword&gt;
+&lt;Keyword&gt;protected&lt;/Keyword&gt;
+&lt;Keyword&gt;public&lt;/Keyword&gt;
+&lt;Keyword&gt;readonly&lt;/Keyword&gt;
+&lt;Keyword&gt;ref&lt;/Keyword&gt;
+&lt;Keyword&gt;return&lt;/Keyword&gt;
+&lt;Keyword&gt;sbyte&lt;/Keyword&gt;
+&lt;Keyword&gt;sealed&lt;/Keyword&gt;
+&lt;Keyword&gt;this&lt;/Keyword&gt;
+&lt;Keyword&gt;throw&lt;/Keyword&gt;
+&lt;Keyword&gt;true&lt;/Keyword&gt;
+&lt;Keyword&gt;try&lt;/Keyword&gt;
+&lt;Keyword&gt;typeof&lt;/Keyword&gt;
+&lt;Keyword&gt;uint&lt;/Keyword&gt;
+&lt;Keyword&gt;ulong&lt;/Keyword&gt;
+&lt;Keyword&gt;unchecked&lt;/Keyword&gt;
+&lt;Keyword&gt;unsafe&lt;/Keyword&gt;
+&lt;Keyword&gt;ushort&lt;/Keyword&gt;
+&lt;Keyword&gt;using&lt;/Keyword&gt;
+&lt;Keyword&gt;short&lt;/Keyword&gt;
+&lt;Keyword&gt;sizeof&lt;/Keyword&gt;
+&lt;Keyword&gt;stackallac&lt;/Keyword&gt;
+&lt;Keyword&gt;static&lt;/Keyword&gt;
+&lt;Keyword&gt;string&lt;/Keyword&gt;
+&lt;Keyword&gt;struct&lt;/Keyword&gt;
+&lt;Keyword&gt;switch&lt;/Keyword&gt;
+&lt;Keyword&gt;virtual&lt;/Keyword&gt;
+&lt;Keyword&gt;void&lt;/Keyword&gt;
+&lt;/CSKeywords&gt;</value>
+  </data>
+  <data name="Mappings" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;Mappings&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;char&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;varchar&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;nchar&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;nvarchar&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;text&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;ntext&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;tinyint&lt;/SqlType&gt;
+		&lt;CsType&gt;byte&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;byte?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullablebyte&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToByte&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;smallint&lt;/SqlType&gt;
+		&lt;CsType&gt;short&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;short?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullableshort&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToInt16&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;int&lt;/SqlType&gt;
+		&lt;CsType&gt;int&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;int?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullableint&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToInt32&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;bigint&lt;/SqlType&gt;
+		&lt;CsType&gt;long&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;long?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullablelong&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToInt64&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;float&lt;/SqlType&gt;
+		&lt;CsType&gt;float&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;float?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullablefloat&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToSingle&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;double&lt;/SqlType&gt;
+		&lt;CsType&gt;double&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;double?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullabledouble&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDouble&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;decimal&lt;/SqlType&gt;
+		&lt;CsType&gt;decimal&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;decimal?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullabledecimal&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDecimal&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;money&lt;/SqlType&gt;
+		&lt;CsType&gt;decimal&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;decimal?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullabledecimal&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDecimal&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;smallmoney&lt;/SqlType&gt;
+		&lt;CsType&gt;decimal&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;decimal?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullabledecimal&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDecimal&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;real&lt;/SqlType&gt;
+		&lt;CsType&gt;decimal&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;decimal?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullabledecimal&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDecimal&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;bit&lt;/SqlType&gt;
+		&lt;CsType&gt;bool&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;bool?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;Nullablebool&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToBoolean&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;smalldatetime&lt;/SqlType&gt;
+		&lt;CsType&gt;DateTime&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;DateTime?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;NullableDateTime&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDateTime&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;datetime&lt;/SqlType&gt;
+		&lt;CsType&gt;DateTime&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;DateTime?&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;NullableDateTime&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToDateTime&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;blob&lt;/SqlType&gt;
+		&lt;CsType&gt;object&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;object&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;object&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToObject&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;image&lt;/SqlType&gt;
+		&lt;CsType&gt;object&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;object&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;object&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToObject&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+	&lt;Mapping&gt;
+		&lt;SqlType&gt;uniqueidentifier&lt;/SqlType&gt;
+		&lt;CsType&gt;string&lt;/CsType&gt;
+		&lt;Cs20NullableType&gt;string&lt;/Cs20NullableType&gt;
+		&lt;Cs11NullableType&gt;string&lt;/Cs11NullableType&gt;
+		&lt;CsConverter&gt;Convert.ToString&lt;/CsConverter&gt;
+	&lt;/Mapping&gt;
+&lt;/Mappings&gt;</value>
+  </data>
+  <data name="SQLKeywords" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;SQLKeywords&gt;
+&lt;Keyword&gt;ADD&lt;/Keyword&gt;
+&lt;Keyword&gt;EXISTS&lt;/Keyword&gt;
+&lt;Keyword&gt;PRIMARY&lt;/Keyword&gt;
+&lt;Keyword&gt;ALL&lt;/Keyword&gt;
+&lt;Keyword&gt;EXIT&lt;/Keyword&gt;
+&lt;Keyword&gt;PRINT&lt;/Keyword&gt;
+&lt;Keyword&gt;ALTER&lt;/Keyword&gt;
+&lt;Keyword&gt;EXTERNAL&lt;/Keyword&gt;
+&lt;Keyword&gt;PROC&lt;/Keyword&gt;
+&lt;Keyword&gt;AND&lt;/Keyword&gt;
+&lt;Keyword&gt;FETCH&lt;/Keyword&gt;
+&lt;Keyword&gt;PROCEDURE&lt;/Keyword&gt;
+&lt;Keyword&gt;ANY&lt;/Keyword&gt;
+&lt;Keyword&gt;FILE&lt;/Keyword&gt;
+&lt;Keyword&gt;PUBLIC&lt;/Keyword&gt;
+&lt;Keyword&gt;AS&lt;/Keyword&gt;
+&lt;Keyword&gt;FILLFACTOR&lt;/Keyword&gt;
+&lt;Keyword&gt;RAISERROR&lt;/Keyword&gt;
+&lt;Keyword&gt;ASC&lt;/Keyword&gt;
+&lt;Keyword&gt;FOR&lt;/Keyword&gt;
+&lt;Keyword&gt;READ&lt;/Keyword&gt;
+&lt;Keyword&gt;AUTHORIZATION&lt;/Keyword&gt;
+&lt;Keyword&gt;FOREIGN&lt;/Keyword&gt;
+&lt;Keyword&gt;READTEXT&lt;/Keyword&gt;
+&lt;Keyword&gt;BACKUP&lt;/Keyword&gt;
+&lt;Keyword&gt;FREETEXT&lt;/Keyword&gt;
+&lt;Keyword&gt;RECONFIGURE&lt;/Keyword&gt;
+&lt;Keyword&gt;BEGIN&lt;/Keyword&gt;
+&lt;Keyword&gt;FREETEXTTABLE&lt;/Keyword&gt;
+&lt;Keyword&gt;REFERENCES&lt;/Keyword&gt;
+&lt;Keyword&gt;BETWEEN&lt;/Keyword&gt;
+&lt;Keyword&gt;FROM&lt;/Keyword&gt;
+&lt;Keyword&gt;REPLICATION&lt;/Keyword&gt;
+&lt;Keyword&gt;BREAK&lt;/Keyword&gt;
+&lt;Keyword&gt;FULL&lt;/Keyword&gt;
+&lt;Keyword&gt;RESTORE&lt;/Keyword&gt;
+&lt;Keyword&gt;BROWSE&lt;/Keyword&gt;
+&lt;Keyword&gt;FUNCTION&lt;/Keyword&gt;
+&lt;Keyword&gt;RESTRICT&lt;/Keyword&gt;
+&lt;Keyword&gt;BULK&lt;/Keyword&gt;
+&lt;Keyword&gt;GOTO&lt;/Keyword&gt;
+&lt;Keyword&gt;RETURN&lt;/Keyword&gt;
+&lt;Keyword&gt;BY&lt;/Keyword&gt;
+&lt;Keyword&gt;GRANT&lt;/Keyword&gt;
+&lt;Keyword&gt;REVERT&lt;/Keyword&gt;
+&lt;Keyword&gt;CASCADE&lt;/Keyword&gt;
+&lt;Keyword&gt;GROUP&lt;/Keyword&gt;
+&lt;Keyword&gt;REVOKE&lt;/Keyword&gt;
+&lt;Keyword&gt;CASE&lt;/Keyword&gt;
+&lt;Keyword&gt;HAVING&lt;/Keyword&gt;
+&lt;Keyword&gt;RIGHT&lt;/Keyword&gt;
+&lt;Keyword&gt;CHECK&lt;/Keyword&gt;
+&lt;Keyword&gt;HOLDLOCK&lt;/Keyword&gt;
+&lt;Keyword&gt;ROLLBACK&lt;/Keyword&gt;
+&lt;Keyword&gt;CHECKPOINT&lt;/Keyword&gt;
+&lt;Keyword&gt;IDENTITY&lt;/Keyword&gt;
+&lt;Keyword&gt;ROWCOUNT&lt;/Keyword&gt;
+&lt;Keyword&gt;CLOSE&lt;/Keyword&gt;
+&lt;Keyword&gt;IDENTITY_INSERT&lt;/Keyword&gt;
+&lt;Keyword&gt;ROWGUIDCOL&lt;/Keyword&gt;
+&lt;Keyword&gt;CLUSTERED&lt;/Keyword&gt;
+&lt;Keyword&gt;IDENTITYCOL&lt;/Keyword&gt;
+&lt;Keyword&gt;RULE&lt;/Keyword&gt;
+&lt;Keyword&gt;COALESCE&lt;/Keyword&gt;
+&lt;Keyword&gt;IF&lt;/Keyword&gt;
+&lt;Keyword&gt;SAVE&lt;/Keyword&gt;
+&lt;Keyword&gt;COLLATE&lt;/Keyword&gt;
+&lt;Keyword&gt;IN&lt;/Keyword&gt;
+&lt;Keyword&gt;SCHEMA&lt;/Keyword&gt;
+&lt;Keyword&gt;COLUMN&lt;/Keyword&gt;
+&lt;Keyword&gt;INDEXIN&lt;/Keyword&gt;
+&lt;Keyword&gt;SECURITYAUDIT&lt;/Keyword&gt;
+&lt;Keyword&gt;COMMIT&lt;/Keyword&gt;
+&lt;Keyword&gt;INNERINDEX&lt;/Keyword&gt;
+&lt;Keyword&gt;SELECT&lt;/Keyword&gt;
+&lt;Keyword&gt;COMPUTE&lt;/Keyword&gt;
+&lt;Keyword&gt;INSERTINNER&lt;/Keyword&gt;
+&lt;Keyword&gt;SESSION_USER&lt;/Keyword&gt;
+&lt;Keyword&gt;CONSTRAINT&lt;/Keyword&gt;
+&lt;Keyword&gt;INTERSECTINSERT&lt;/Keyword&gt;
+&lt;Keyword&gt;SET&lt;/Keyword&gt;
+&lt;Keyword&gt;CONTAINS&lt;/Keyword&gt;
+&lt;Keyword&gt;INTOINTERSECT&lt;/Keyword&gt;
+&lt;Keyword&gt;SETUSER&lt;/Keyword&gt;
+&lt;Keyword&gt;CONTAINSTABLE&lt;/Keyword&gt;
+&lt;Keyword&gt;ISINTO&lt;/Keyword&gt;
+&lt;Keyword&gt;SHUTDOWN&lt;/Keyword&gt;
+&lt;Keyword&gt;CONTINUE&lt;/Keyword&gt;
+&lt;Keyword&gt;JOINIS&lt;/Keyword&gt;
+&lt;Keyword&gt;SOME&lt;/Keyword&gt;
+&lt;Keyword&gt;CONVERT&lt;/Keyword&gt;
+&lt;Keyword&gt;KEYJOIN&lt;/Keyword&gt;
+&lt;Keyword&gt;STATISTICS&lt;/Keyword&gt;
+&lt;Keyword&gt;CREATE&lt;/Keyword&gt;
+&lt;Keyword&gt;KILLKEY&lt;/Keyword&gt;
+&lt;Keyword&gt;SYSTEM_USER&lt;/Keyword&gt;
+&lt;Keyword&gt;CROSS&lt;/Keyword&gt;
+&lt;Keyword&gt;LEFTKILL&lt;/Keyword&gt;
+&lt;Keyword&gt;TABLE&lt;/Keyword&gt;
+&lt;Keyword&gt;CURRENT&lt;/Keyword&gt;
+&lt;Keyword&gt;LIKELEFT&lt;/Keyword&gt;
+&lt;Keyword&gt;TABLESAMPLE&lt;/Keyword&gt;
+&lt;Keyword&gt;CURRENT_DATE&lt;/Keyword&gt;
+&lt;Keyword&gt;LINENOLIKE&lt;/Keyword&gt;
+&lt;Keyword&gt;TEXTSIZE&lt;/Keyword&gt;
+&lt;Keyword&gt;CURRENT_TIME&lt;/Keyword&gt;
+&lt;Keyword&gt;LOADLINENO&lt;/Keyword&gt;
+&lt;Keyword&gt;THEN&lt;/Keyword&gt;
+&lt;Keyword&gt;CURRENT_TIMESTAMP&lt;/Keyword&gt;
+&lt;Keyword&gt;NATIONAL LOAD&lt;/Keyword&gt;
+&lt;Keyword&gt;TO&lt;/Keyword&gt;
+&lt;Keyword&gt;CURRENT_USER&lt;/Keyword&gt;
+&lt;Keyword&gt;NOCHECKNATIONAL&lt;/Keyword&gt;
+&lt;Keyword&gt;TOP&lt;/Keyword&gt;
+&lt;Keyword&gt;CURSOR&lt;/Keyword&gt;
+&lt;Keyword&gt;NONCLUSTEREDNOCHECK&lt;/Keyword&gt;
+&lt;Keyword&gt;TRAN&lt;/Keyword&gt;
+&lt;Keyword&gt;DATABASE&lt;/Keyword&gt;
+&lt;Keyword&gt;NOTNONCLUSTERED&lt;/Keyword&gt;
+&lt;Keyword&gt;TRANSACTION&lt;/Keyword&gt;
+&lt;Keyword&gt;DBCC&lt;/Keyword&gt;
+&lt;Keyword&gt;NULLNOT&lt;/Keyword&gt;
+&lt;Keyword&gt;TRIGGER&lt;/Keyword&gt;
+&lt;Keyword&gt;DEALLOCATE&lt;/Keyword&gt;
+&lt;Keyword&gt;NULLIFNULL&lt;/Keyword&gt;
+&lt;Keyword&gt;TRUNCATE&lt;/Keyword&gt;
+&lt;Keyword&gt;DECLARE&lt;/Keyword&gt;
+&lt;Keyword&gt;OFNULLIF&lt;/Keyword&gt;
+&lt;Keyword&gt;TSEQUAL&lt;/Keyword&gt;
+&lt;Keyword&gt;DEFAULT&lt;/Keyword&gt;
+&lt;Keyword&gt;OFFOF&lt;/Keyword&gt;
+&lt;Keyword&gt;UNION&lt;/Keyword&gt;
+&lt;Keyword&gt;DELETE&lt;/Keyword&gt;
+&lt;Keyword&gt;OFFSETSOFF&lt;/Keyword&gt;
+&lt;Keyword&gt;UNIQUE&lt;/Keyword&gt;
+&lt;Keyword&gt;DENY&lt;/Keyword&gt;
+&lt;Keyword&gt;ONOFFSETS&lt;/Keyword&gt;
+&lt;Keyword&gt;UNPIVOT&lt;/Keyword&gt;
+&lt;Keyword&gt;DESC&lt;/Keyword&gt;
+&lt;Keyword&gt;OPENON&lt;/Keyword&gt;
+&lt;Keyword&gt;UPDATE&lt;/Keyword&gt;
+&lt;Keyword&gt;DISK&lt;/Keyword&gt;
+&lt;Keyword&gt;OPENDATASOURCEOPEN&lt;/Keyword&gt;
+&lt;Keyword&gt;UPDATETEXT&lt;/Keyword&gt;
+&lt;Keyword&gt;DISTINCT&lt;/Keyword&gt;
+&lt;Keyword&gt;OPENQUERYOPENDATASOURCE&lt;/Keyword&gt;
+&lt;Keyword&gt;USE&lt;/Keyword&gt;
+&lt;Keyword&gt;DISTRIBUTED&lt;/Keyword&gt;
+&lt;Keyword&gt;OPENROWSETOPENQUERY&lt;/Keyword&gt;
+&lt;Keyword&gt;USER&lt;/Keyword&gt;
+&lt;Keyword&gt;DOUBLE&lt;/Keyword&gt;
+&lt;Keyword&gt;OPENXMLOPENROWSET&lt;/Keyword&gt;
+&lt;Keyword&gt;VALUES&lt;/Keyword&gt;
+&lt;Keyword&gt;DROP&lt;/Keyword&gt;
+&lt;Keyword&gt;OPTIONOPENXML&lt;/Keyword&gt;
+&lt;Keyword&gt;VARYING&lt;/Keyword&gt;
+&lt;Keyword&gt;DUMP&lt;/Keyword&gt;
+&lt;Keyword&gt;OROPTION&lt;/Keyword&gt;
+&lt;Keyword&gt;VIEW&lt;/Keyword&gt;
+&lt;Keyword&gt;ELSE&lt;/Keyword&gt;
+&lt;Keyword&gt;ORDEROR&lt;/Keyword&gt;
+&lt;Keyword&gt;WAITFOR&lt;/Keyword&gt;
+&lt;Keyword&gt;END&lt;/Keyword&gt;
+&lt;Keyword&gt;OUTERORDER&lt;/Keyword&gt;
+&lt;Keyword&gt;WHEN&lt;/Keyword&gt;
+&lt;Keyword&gt;ERRLVL&lt;/Keyword&gt;
+&lt;Keyword&gt;OVEROUTER&lt;/Keyword&gt;
+&lt;Keyword&gt;WHERE&lt;/Keyword&gt;
+&lt;Keyword&gt;ESCAPE&lt;/Keyword&gt;
+&lt;Keyword&gt;PERCENTOVER&lt;/Keyword&gt;
+&lt;Keyword&gt;WHILE&lt;/Keyword&gt;
+&lt;Keyword&gt;EXCEPT&lt;/Keyword&gt;
+&lt;Keyword&gt;PIVOTPERCENT&lt;/Keyword&gt;
+&lt;Keyword&gt;WITH&lt;/Keyword&gt;
+&lt;Keyword&gt;EXEC&lt;/Keyword&gt;
+&lt;Keyword&gt;PLANPIVOT&lt;/Keyword&gt;
+&lt;Keyword&gt;WRITETEXT&lt;/Keyword&gt;
+&lt;Keyword&gt;EXECUTE&lt;/Keyword&gt;
+&lt;Keyword&gt;PLAN PRECISION&lt;/Keyword&gt;
+&lt;/SQLKeywords&gt;</value>
+  </data>
+</root>

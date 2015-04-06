@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>title</title>
+        <script src="/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="/Scripts/jquery.signalR-2.1.2.min.js"></script>
+        <script src="~/signalr/hubs"></script>
+    </head>
+    <body>
+        <div>
+            <script>
+                var connection = $.hubConnection();
+                var contosoChatHubProxy = connection.createHubProxy('wallResponseHub');
+                contosoChatHubProxy.on('sendNewMessage', function (name) {
+                    console.log(name);
+                });
+                connection.start().done(function () {
+                    // Wire up Send button to call NewContosoChatMessage on the server.
+                    $('#newContosoChatMessage').click(function () {
+                        contosoChatHubProxy.invoke('sendNewMessage', $('#displayname').val());
+                        $('#message').val('').focus();
+                    });
+                });
+            </script>
+            <div id="newContosoChatMessage">aasdsa</div>
+            <input id="displayname" type="text" />
+            <input id="message" type="text" />
+            
+        </div>
+    </body>
+</html>
