@@ -1,10 +1,10 @@
 ﻿#region
 
 using System.Collections.Generic;
-using Bade.Constants;
 using Bade.Data.Contract;
 using Bade.Entity.Domain;
 using Bade.Infrastructure;
+using Bade.Infrastructure.Helper;
 
 #endregion
 
@@ -13,7 +13,7 @@ namespace Bade.Data.Dapper
     public class ApplicationRepository : Repository, IApplicationRepository
     {               
         public ApplicationRepository(IConnectionFactory connectionFactory)
-            : base(connectionFactory, Constant.DefaultConnectionStringName)
+            : base(connectionFactory, GlobalConfiguration.DefaultConnectionStringName)
         {                        
         }
         public ApplicationConfig GetByApplicationIdAndKey(int applicationId, string key)

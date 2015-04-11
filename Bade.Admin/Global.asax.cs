@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Bade.Admin.Model.Mapper;
+using Bade.Infrastructure.Helper;
 
 namespace Bade.Admin
 {
@@ -15,6 +16,7 @@ namespace Bade.Admin
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutofacBootsrapper.Register();
             AutoMapperConfiguration.LoadConfig();
+            GlobalConfiguration.LoadConfiguration();
         }
     }
 }

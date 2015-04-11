@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
-using System.Web;
+using Bade.Admin;
 using React;
+using WebActivatorEx;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Bade.Admin.ReactConfig), "Configure")]
+[assembly: PreApplicationStartMethod(typeof(ReactConfig), "Configure")]
 
 namespace Bade.Admin
 {
@@ -13,19 +10,11 @@ namespace Bade.Admin
     {
         public static void Configure()
         {
-
-
-
             ReactSiteConfiguration.Configuration
-                .AddScript("~/app/prod/serverBundle.js");
-
-
-
-
-
-
-
-
+                .SetUseHarmony(true)
+                .SetReuseJavaScriptEngines(true)
+                .SetStripTypes(true)
+                .AddScript("~/app/components/MiniButton.js");
         }
     }
 }

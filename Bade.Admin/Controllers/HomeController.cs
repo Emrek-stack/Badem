@@ -6,6 +6,7 @@ namespace Bade.Admin.Controllers
     {
         public ActionResult Index()
         {
+            Session["test"] = "euheuehueh";
             return View();
         }
     }

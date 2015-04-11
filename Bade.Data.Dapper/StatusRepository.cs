@@ -5,10 +5,9 @@
 ****** Generation Date: 16.02.2015 03:11:13
 */
 
-using Bade.Constants;
 using Bade.Data.Contract;
-using Bade.Entity.Domain;
 using Bade.Infrastructure;
+using Bade.Infrastructure.Helper;
 
 namespace Bade.Data.Dapper
 {
@@ -16,7 +15,7 @@ namespace Bade.Data.Dapper
     {
 
         public StatusRepository(IConnectionFactory connectionFactory) :
-            base(connectionFactory, Constant.DefaultConnectionStringName)
+            base(connectionFactory, GlobalConfiguration.DefaultConnectionStringName)
         {
 
         }

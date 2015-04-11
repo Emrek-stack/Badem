@@ -26,7 +26,10 @@ namespace Bade.Admin
             //    new JsMinify()
             //}).Include("~/assets/semantic-ui/"));
 
-
+            bundles.Add(new JsxBundle("~/bundles/main").Include(
+                // Add your JSX files here
+                "~/app/components/MiniButton.js"
+            ));
         }
     }
 }

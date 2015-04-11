@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using Bade.Constants;
 using Bade.Data.Contract;
 using Bade.Entity.Domain;
 using Bade.Infrastructure;
-using Dapper;
+using Bade.Infrastructure.Helper;
 
 namespace Bade.Data.Dapper
 {
@@ -13,7 +11,7 @@ namespace Bade.Data.Dapper
     {
 
         public AdminRepository(IConnectionFactory connectionFactory)
-            : base(connectionFactory, Constant.DefaultConnectionStringName)
+            : base(connectionFactory, GlobalConfiguration.DefaultConnectionStringName)
         {
 
         }

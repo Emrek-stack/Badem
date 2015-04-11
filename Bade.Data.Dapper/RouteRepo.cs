@@ -1,9 +1,8 @@
 ﻿#region
 
-using Bade.Constants;
 using Bade.Data.Contract;
-using Bade.Entity.Domain;
 using Bade.Infrastructure;
+using Bade.Infrastructure.Helper;
 
 #endregion
 
@@ -14,7 +13,7 @@ namespace Bade.Data.Dapper
 
 
         public RouteRepository(IConnectionFactory connectionFactory)
-            : base(connectionFactory, Constant.DefaultConnectionStringName)
+            : base(connectionFactory, GlobalConfiguration.DefaultConnectionStringName)
         {
             
         }
